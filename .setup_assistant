@@ -5,4 +5,6 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/JulietteY20MP.srdf
   CONFIG:
-    generated_timestamp: 1440764030
+    author_name: Luca Lach
+    author_email: llach@techfak.uni-bielefeld.de
+    generated_timestamp: 1493564223

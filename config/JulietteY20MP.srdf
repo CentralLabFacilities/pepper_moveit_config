@@ -72,6 +72,16 @@
         <joint name="LShoulderRoll" value="0.68" />
         <joint name="LWristYaw" value="-0.2" />
     </group_state>
+    <group_state name="rest" group="left_arm">
+        <joint name="HipPitch" value="0" />
+        <joint name="HipRoll" value="0" />
+        <joint name="KneePitch" value="0" />
+        <joint name="LElbowRoll" value="0" />
+        <joint name="LElbowYaw" value="0" />
+        <joint name="LShoulderPitch" value="1.5" />
+        <joint name="LShoulderRoll" value="0.5" />
+        <joint name="LWristYaw" value="0" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="left_eef" parent_link="l_wrist" group="left_hand" />
     <end_effector name="right_eef" parent_link="r_wrist" group="right_hand" />
