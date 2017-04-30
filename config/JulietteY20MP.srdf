@@ -83,7 +83,7 @@
         <joint name="LWristYaw" value="0" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="left_eef" parent_link="l_wrist" group="left_hand" />
+    <end_effector name="left_hand" parent_link="l_wrist" group="left_hand" parent_group="left_arm" />
     <end_effector name="right_eef" parent_link="r_wrist" group="right_hand" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_odom" type="floating" parent_frame="odom" child_link="base_link" />
