@@ -31,6 +31,9 @@ controller_list:
   - name: fake_left_hand_controller
     joints:
       - LHand
+  - name: fake_left_hand_controlled_joints_controller
+    joints:
+      - LHand
   - name: fake_base_controller
     joints:
       - virtual_odom
@@ -38,7 +41,7 @@ controller_list:
     joints:
       - HeadYaw
       - HeadPitch
-  - name: fake_body_left_arm_controller
+  - name: fake_body_arms_controller
     joints:
       - HeadYaw
       - HeadPitch
@@ -50,3 +53,8 @@ controller_list:
       - LElbowYaw
       - LElbowRoll
       - LWristYaw
+      - RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+      - RWristYaw
