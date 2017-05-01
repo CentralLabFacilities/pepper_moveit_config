@@ -37,6 +37,7 @@
         <link name="RThumb2_link" />
         <joint name="RHand" />
     </group>
+
     <group name="left_hand">
         <link name="LFinger11_link" />
         <link name="LFinger12_link" />
@@ -53,6 +54,9 @@
         <link name="l_gripper" />
         <link name="LThumb1_link" />
         <link name="LThumb2_link" />
+        <joint name="LHand" />
+    </group>
+    <group name="left_hand_controlled_joints">
         <joint name="LHand" />
     </group>
     <group name="base">
