@@ -8,9 +8,6 @@ controller_list:
       - RWristYaw
   - name: fake_left_arm_controller
     joints:
-      - HipRoll
-      - HipPitch
-      - KneePitch
       - LShoulderPitch
       - LShoulderRoll
       - LElbowYaw
@@ -18,9 +15,6 @@ controller_list:
       - LWristYaw
   - name: fake_both_arms_controller
     joints:
-      - HipRoll
-      - HipPitch
-      - KneePitch
       - LShoulderPitch
       - LShoulderRoll
       - LElbowYaw
@@ -44,3 +38,15 @@ controller_list:
     joints:
       - HeadYaw
       - HeadPitch
+  - name: fake_body_left_arm_controller
+    joints:
+      - HeadYaw
+      - HeadPitch
+      - HipRoll
+      - HipPitch
+      - KneePitch
+      - LShoulderPitch
+      - LShoulderRoll
+      - LElbowYaw
+      - LElbowRoll
+      - LWristYaw
