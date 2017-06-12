@@ -6,6 +6,12 @@
   <!-- By default, we are not in debug mode -->
   <arg name="debug" default="false" />
 
+  <!-- augmented pnp usage -->
+  <arg name="augmented" default="false" />
+
+  <!-- dont wait for controller in sim -->
+  <arg name="sim" default="false" />
+
   <!-- Load the URDF, SRDF and other .yaml configuration files on the param server -->
   <include file="$(find pepper_moveit_config)/launch/planning_context.launch">
     <arg name="load_robot_description" value="true"/>
@@ -17,9 +23,10 @@
   <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
   <include file="$(find pepper_moveit_config)/launch/move_group.launch">
     <arg name="allow_trajectory_execution" value="true"/>  
-    <!-- <arg name="fake_execution" value="true"/> -->
+    <arg name="fake_execution" value="$(arg sim)"/>
     <arg name="info" value="true"/>
     <arg name="debug" value="$(arg debug)"/>
+    <arg name="augmented" value="$(arg augmented)"/>
   </include>
 
   <!-- If database loading was enabled, start mongodb as well -->

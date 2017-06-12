@@ -2,6 +2,9 @@
 
   <include file="$(find pepper_moveit_config)/launch/planning_context.launch" />
 
+  <!-- augmented pnp usage -->
+  <arg name="augmented" default="false" />
+
   <!-- GDB Debug Option -->
   <arg name="debug" default="false" />
   <arg unless="$(arg debug)" name="launch_prefix" value="" />
@@ -47,7 +50,7 @@
     <param name="jiggle_fraction" value="$(arg jiggle_fraction)" />
 
     <!-- MoveGroup capabilities to load -->
-    <param name="capabilities" value="move_group/MoveGroupCartesianPathService
+    <param unless="$(arg augmented)" name="capabilities" value="move_group/MoveGroupCartesianPathService
               move_group/MoveGroupExecuteTrajectoryAction
               move_group/MoveGroupKinematicsService
               move_group/MoveGroupMoveAction
@@ -58,6 +61,20 @@
               move_group/MoveGroupGetPlanningSceneService
               move_group/ClearOctomapService
 				      " />
+
+    <param if="$(arg augmented)" name="capabilities" value="move_group/MoveGroupCartesianPathService
+              move_group/MoveGroupExecuteTrajectoryAction
+              move_group/MoveGroupKinematicsService
+              move_group/MoveGroupMoveAction
+              move_group/MoveGroupPlanService
+              move_group/MoveGroupAugmentedPickPlaceAction
+              move_group/MoveGroupQueryPlannersService
+              move_group/MoveGroupStateValidationService
+              move_group/MoveGroupGetPlanningSceneService
+              move_group/ClearOctomapService
+				      " />
+
+    <param if="$(arg augmented)" name="disable_capabilities" value="move_group/MoveGroupPickPlaceAction" />
 
     <!-- Publish the planning scene of the physical robot so that rviz plugin can know actual robot -->
     <param name="planning_scene_monitor/publish_planning_scene" value="$(arg publish_monitored_planning_scene)" />
