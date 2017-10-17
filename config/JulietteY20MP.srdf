@@ -171,6 +171,47 @@
         <joint name="RShoulderRoll" value="-0.0762" />
         <joint name="RWristYaw" value="0" />
     </group_state>
+    <group_state name="close" group="left_hand">
+        <joint name="LFinger11" value="0" />
+        <joint name="LFinger12" value="0" />
+        <joint name="LFinger13" value="0" />
+        <joint name="LFinger21" value="0" />
+        <joint name="LFinger22" value="0" />
+        <joint name="LFinger23" value="0" />
+        <joint name="LFinger31" value="0" />
+        <joint name="LFinger32" value="0" />
+        <joint name="LFinger33" value="0" />
+        <joint name="LFinger41" value="0" />
+        <joint name="LFinger42" value="0" />
+        <joint name="LFinger43" value="0" />
+        <joint name="LHand" value="0.02" />
+        <joint name="LThumb1" value="0" />
+        <joint name="LThumb2" value="0" />
+    </group_state>
+    <group_state name="open" group="left_hand">
+        <joint name="LFinger11" value="0" />
+        <joint name="LFinger12" value="0" />
+        <joint name="LFinger13" value="0" />
+        <joint name="LFinger21" value="0" />
+        <joint name="LFinger22" value="0" />
+        <joint name="LFinger23" value="0" />
+        <joint name="LFinger31" value="0" />
+        <joint name="LFinger32" value="0" />
+        <joint name="LFinger33" value="0" />
+        <joint name="LFinger41" value="0" />
+        <joint name="LFinger42" value="0" />
+        <joint name="LFinger43" value="0" />
+        <joint name="LHand" value="0.98" />
+        <joint name="LThumb1" value="1.2293" />
+        <joint name="LThumb2" value="0.7512" />
+    </group_state>
+    <group_state name="default" group="left_arm">
+        <joint name="LElbowRoll" value="0" />
+        <joint name="LElbowYaw" value="0.2267" />
+        <joint name="LShoulderPitch" value="1.0655" />
+        <joint name="LShoulderRoll" value="0.473" />
+        <joint name="LWristYaw" value="0" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="left_hand" parent_link="l_wrist" group="left_hand" parent_group="left_arm" />
     <end_effector name="right_eef" parent_link="r_wrist" group="right_hand" />
