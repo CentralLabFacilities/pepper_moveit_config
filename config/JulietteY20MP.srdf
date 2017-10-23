@@ -79,6 +79,7 @@
         <joint name="torso_base_fixedjoint" />
     </group>
     <group name="body_arms">
+        <group name="body" />
         <group name="body_both_arms" />
         <joint name="HeadPitch" />
         <joint name="HeadYaw" />
