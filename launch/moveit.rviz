@@ -908,7 +908,7 @@ Visualization Manager:
       Name: Current View
       Near Clip Distance: 0.01
       Pitch: 0.454797
-      Target Frame: base_link
+      Target Frame: torso
       Value: XYOrbit (rviz)
       Yaw: 5.95997
     Saved: ~
