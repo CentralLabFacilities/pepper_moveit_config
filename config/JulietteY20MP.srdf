@@ -26,8 +26,8 @@
         <chain base_link="base_footprint" tip_link="l_wrist" />
     </group>
     <group name="body_both_arms">
-        <group name="left_arm" />
-        <group name="right_arm" />
+        <group name="body_left_arm" />
+        <group name="body_right_arm" />
     </group>
     <group name="right_hand">
         <link name="RFinger11_link" />
