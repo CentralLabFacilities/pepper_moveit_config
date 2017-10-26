@@ -1,34 +1,31 @@
 body:
   kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
+  kinematics_solver_attempts: 3
   kinematics_solver_search_resolution: 0.005
   kinematics_solver_timeout: 0.005
-  kinematics_solver_attempts: 3
-  position_only_ik: True
-
-right_arm:
-  kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
-  kinematics_solver_search_resolution: 0.005
-  kinematics_solver_timeout: 0.005
-  kinematics_solver_attempts: 3
-left_arm:
-  kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
-  kinematics_solver_search_resolution: 0.005
-  kinematics_solver_timeout: 0.005
-  kinematics_solver_attempts: 3
-
-body_right_arm:
-  kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
-  kinematics_solver_search_resolution: 0.005
-  kinematics_solver_timeout: 0.005
-  kinematics_solver_attempts: 3
+  position_only_ik: true
 body_left_arm:
   kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
+  kinematics_solver_attempts: 3
   kinematics_solver_search_resolution: 0.005
   kinematics_solver_timeout: 0.005
+body_right_arm:
+  kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
   kinematics_solver_attempts: 3
-
+  kinematics_solver_search_resolution: 0.005
+  kinematics_solver_timeout: 0.005
 head:
   kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
+  kinematics_solver_attempts: 3
   kinematics_solver_search_resolution: 0.005
   kinematics_solver_timeout: 0.005
+left_arm:
+  kinematics_solver: pepper_left_arm_kinematics/IKFastKinematicsPlugin
   kinematics_solver_attempts: 3
+  kinematics_solver_search_resolution: 0.005
+  kinematics_solver_timeout: 0.005
+right_arm:
+  kinematics_solver: pepper_right_arm_kinematics/IKFastKinematicsPlugin
+  kinematics_solver_attempts: 3
+  kinematics_solver_search_resolution: 0.005
+  kinematics_solver_timeout: 0.005
