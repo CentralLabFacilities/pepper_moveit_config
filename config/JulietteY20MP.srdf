@@ -42,6 +42,7 @@
         <link name="RFinger41_link" />
         <link name="RFinger42_link" />
         <link name="RFinger43_link" />
+        <link name="r_wrist" />
         <link name="r_gripper" />
         <link name="RThumb1_link" />
         <link name="RThumb2_link" />
@@ -60,6 +61,7 @@
         <link name="LFinger41_link" />
         <link name="LFinger42_link" />
         <link name="LFinger43_link" />
+        <link name="l_wrist" />
         <link name="l_gripper" />
         <link name="LThumb1_link" />
         <link name="LThumb2_link" />
