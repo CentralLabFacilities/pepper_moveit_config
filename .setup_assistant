@@ -1,6 +1,6 @@
 moveit_setup_assistant_config:
   URDF:
-    package: pepper_description
+    package: pepper_clf_description
     relative_path: urdf/pepper1.0_generated_urdf/pepper_robot.xacro
   SRDF:
     relative_path: config/JulietteY20MP.srdf
