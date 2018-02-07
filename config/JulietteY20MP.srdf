@@ -187,6 +187,40 @@
         <joint name="LShoulderRoll" value="0.473" />
         <joint name="LWristYaw" value="0" />
     </group_state>
+        <group_state name="rclose" group="right_hand">
+        <joint name="RFinger11" value="0" />
+        <joint name="RFinger12" value="0" />
+        <joint name="RFinger13" value="0" />
+        <joint name="RFinger21" value="0" />
+        <joint name="RFinger22" value="0" />
+        <joint name="RFinger23" value="0" />
+        <joint name="RFinger31" value="0" />
+        <joint name="RFinger32" value="0" />
+        <joint name="RFinger33" value="0" />
+        <joint name="RFinger41" value="0" />
+        <joint name="RFinger42" value="0" />
+        <joint name="RFinger43" value="0" />
+        <joint name="RHand" value="0.02" />
+        <joint name="RThumb1" value="0" />
+        <joint name="RThumb2" value="0" />
+    </group_state>
+    <group_state name="ropen" group="right_hand">
+        <joint name="RFinger11" value="0" />
+        <joint name="RFinger12" value="0" />
+        <joint name="RFinger13" value="0" />
+        <joint name="RFinger21" value="0" />
+        <joint name="RFinger22" value="0" />
+        <joint name="RFinger23" value="0" />
+        <joint name="RFinger31" value="0" />
+        <joint name="RFinger32" value="0" />
+        <joint name="RFinger33" value="0" />
+        <joint name="RFinger41" value="0" />
+        <joint name="RFinger42" value="0" />
+        <joint name="RFinger43" value="0" />
+        <joint name="RHand" value="0.98" />
+        <joint name="RThumb1" value="0.855211" />
+        <joint name="RThumb2" value="0.855211" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="left_hand" parent_link="l_wrist" group="left_hand" parent_group="left_arm" />
     <end_effector name="right_hand" parent_link="r_wrist" group="right_hand" />
