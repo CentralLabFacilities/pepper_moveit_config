@@ -184,10 +184,10 @@
         <joint name="LShoulderRoll" value="0.473" />
         <joint name="LWristYaw" value="0" />
     </group_state>
-        <group_state name="rclose" group="right_hand">
+    <group_state name="close" group="right_hand">
         <joint name="RHand" value="0.02" />
     </group_state>
-    <group_state name="ropen" group="right_hand">
+    <group_state name="open" group="right_hand">
         <joint name="RHand" value="0.98" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
