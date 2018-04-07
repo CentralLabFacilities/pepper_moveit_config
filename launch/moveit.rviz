@@ -5,9 +5,12 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
+        - /MotionPlanning1
         - /MotionPlanning1/Planning Request1
-      Splitter Ratio: 0.74256
-    Tree Height: 184
+        - /TF1/Frames1
+        - /Motion Planning Tasks1
+      Splitter Ratio: 0.742560029
+    Tree Height: 425
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -24,7 +27,7 @@ Visualization Manager:
       Color: 160; 160; 164
       Enabled: true
       Line Style:
-        Line Width: 0.03
+        Line Width: 0.0299999993
         Value: Lines
       Name: Grid
       Normal Cell Count: 0
@@ -45,8 +48,19 @@ Visualization Manager:
       MoveIt_Use_Constraint_Aware_IK: true
       MoveIt_Warehouse_Host: 127.0.0.1
       MoveIt_Warehouse_Port: 33829
+      MoveIt_Workspace:
+        Center:
+          X: 0
+          Y: 0
+          Z: 0
+        Size:
+          X: 2
+          Y: 2
+          Z: 2
       Name: MotionPlanning
       Planned Path:
+        Color Enabled: false
+        Interrupt Display: false
         Links:
           All Links Enabled: true
           BumperB_frame:
@@ -115,10 +129,6 @@ Visualization Manager:
             Show Trail: false
             Value: true
           ImuBaseAccelerometer_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          ImuBaseGyrometer_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -409,7 +419,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          base_link:
+          l_grasp_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -422,6 +432,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          r_grasp_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           r_gripper:
             Alpha: 1
             Show Axes: false
@@ -436,12 +450,18 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          torso_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
         Loop Animation: false
         Robot Alpha: 0.5
+        Robot Color: 150; 50; 150
         Show Robot Collision: false
         Show Robot Visual: true
         Show Trail: false
         State Display Time: 0.05 s
+        Trail Step Size: 1
         Trajectory Topic: move_group/display_planned_path
       Planning Metrics:
         Payload: 1
@@ -449,7 +469,7 @@ Visualization Manager:
         Show Manipulability: false
         Show Manipulability Index: false
         Show Weight Limit: false
-        TextHeight: 0.08
+        TextHeight: 0.0799999982
       Planning Request:
         Colliding Link Color: 255; 0; 0
         Goal State Alpha: 1
@@ -467,7 +487,7 @@ Visualization Manager:
       Scene Geometry:
         Scene Alpha: 1
         Scene Color: 50; 230; 50
-        Scene Display Time: 0.2
+        Scene Display Time: 0.200000003
         Show Scene Geometry: true
         Voxel Coloring: Z-Axis
         Voxel Rendering: Occupied Voxels
@@ -544,7 +564,725 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          ImuBaseGyrometer_frame:
+          ImuTorsoAccelerometer_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ImuTorsoGyrometer_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LBicep:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LElbow:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LFinger11_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LFinger12_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LFinger13_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LFinger21_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LFinger22_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LFinger23_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LFinger31_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LFinger32_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LFinger33_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LFinger41_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LFinger42_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LFinger43_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LForeArm:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LHandTouchBack_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LShoulder:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LSpeaker_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LThumb1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LThumb2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Link Tree Style: Links in Alphabetic Order
+          Neck:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          Pelvis:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RBicep:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RElbow:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RFinger11_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RFinger12_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RFinger13_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RFinger21_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RFinger22_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RFinger23_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RFinger31_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RFinger32_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RFinger33_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RFinger41_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RFinger42_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RFinger43_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RForeArm:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RHandTouchBack_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RShoulder:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RSpeaker_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RThumb1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RThumb2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ShovelLaser_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          SonarBack_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          SonarFront_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          SurroundingFrontLaser_device_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          SurroundingFrontLaser_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          SurroundingLeftLaser_device_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          SurroundingLeftLaser_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          SurroundingRightLaser_device_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          SurroundingRightLaser_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          Tablet_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          Tibia:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          VerticalLeftLaser_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          VerticalRightLaser_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          WheelB_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WheelFL_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          WheelFR_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          base_footprint:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          l_grasp_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          l_gripper:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          l_wrist:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          r_grasp_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          r_gripper:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          r_wrist:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          torso:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          torso_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+        Robot Alpha: 0.5
+        Show Robot Collision: false
+        Show Robot Visual: true
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        BumperB_frame:
+          Value: false
+        BumperFL_frame:
+          Value: false
+        BumperFR_frame:
+          Value: false
+        CameraBottom_frame:
+          Value: false
+        CameraBottom_optical_frame:
+          Value: false
+        CameraDepth_frame:
+          Value: false
+        CameraDepth_optical_frame:
+          Value: false
+        CameraTop_frame:
+          Value: false
+        CameraTop_optical_frame:
+          Value: false
+        ChestButton_frame:
+          Value: false
+        Head:
+          Value: false
+        HeadTouchFront_frame:
+          Value: false
+        HeadTouchMiddle_frame:
+          Value: false
+        HeadTouchRear_frame:
+          Value: false
+        Hip:
+          Value: false
+        ImuBaseAccelerometer_frame:
+          Value: false
+        ImuTorsoAccelerometer_frame:
+          Value: false
+        ImuTorsoGyrometer_frame:
+          Value: false
+        LBicep:
+          Value: false
+        LElbow:
+          Value: false
+        LFinger11_link:
+          Value: false
+        LFinger12_link:
+          Value: false
+        LFinger13_link:
+          Value: false
+        LFinger21_link:
+          Value: false
+        LFinger22_link:
+          Value: false
+        LFinger23_link:
+          Value: false
+        LFinger31_link:
+          Value: false
+        LFinger32_link:
+          Value: false
+        LFinger33_link:
+          Value: false
+        LFinger41_link:
+          Value: false
+        LFinger42_link:
+          Value: false
+        LFinger43_link:
+          Value: false
+        LForeArm:
+          Value: false
+        LHandTouchBack_frame:
+          Value: false
+        LShoulder:
+          Value: false
+        LSpeaker_frame:
+          Value: false
+        LThumb1_link:
+          Value: false
+        LThumb2_link:
+          Value: false
+        Neck:
+          Value: false
+        Pelvis:
+          Value: false
+        RBicep:
+          Value: false
+        RElbow:
+          Value: false
+        RFinger11_link:
+          Value: false
+        RFinger12_link:
+          Value: false
+        RFinger13_link:
+          Value: false
+        RFinger21_link:
+          Value: false
+        RFinger22_link:
+          Value: false
+        RFinger23_link:
+          Value: false
+        RFinger31_link:
+          Value: false
+        RFinger32_link:
+          Value: false
+        RFinger33_link:
+          Value: false
+        RFinger41_link:
+          Value: false
+        RFinger42_link:
+          Value: false
+        RFinger43_link:
+          Value: false
+        RForeArm:
+          Value: false
+        RHandTouchBack_frame:
+          Value: false
+        RShoulder:
+          Value: false
+        RSpeaker_frame:
+          Value: false
+        RThumb1_link:
+          Value: false
+        RThumb2_link:
+          Value: false
+        ShovelLaser_frame:
+          Value: false
+        SonarBack_frame:
+          Value: false
+        SonarFront_frame:
+          Value: false
+        SurroundingFrontLaser_device_frame:
+          Value: false
+        SurroundingFrontLaser_frame:
+          Value: false
+        SurroundingLeftLaser_device_frame:
+          Value: false
+        SurroundingLeftLaser_frame:
+          Value: false
+        SurroundingRightLaser_device_frame:
+          Value: false
+        SurroundingRightLaser_frame:
+          Value: false
+        Tablet_frame:
+          Value: false
+        Tibia:
+          Value: false
+        VerticalLeftLaser_frame:
+          Value: false
+        VerticalRightLaser_frame:
+          Value: false
+        WheelB_link:
+          Value: false
+        WheelFL_link:
+          Value: false
+        WheelFR_link:
+          Value: false
+        base_footprint:
+          Value: false
+        l_grasp_frame:
+          Value: false
+        l_gripper:
+          Value: false
+        l_wrist:
+          Value: false
+        odom:
+          Value: false
+        r_grasp_frame:
+          Value: false
+        r_gripper:
+          Value: false
+        r_wrist:
+          Value: false
+        torso:
+          Value: false
+        torso_base:
+          Value: false
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        odom:
+          base_footprint:
+            Tibia:
+              BumperB_frame:
+                {}
+              BumperFL_frame:
+                {}
+              BumperFR_frame:
+                {}
+              ImuBaseAccelerometer_frame:
+                {}
+              Pelvis:
+                Hip:
+                  torso_base:
+                    torso:
+                      ChestButton_frame:
+                        {}
+                      ImuTorsoAccelerometer_frame:
+                        {}
+                      ImuTorsoGyrometer_frame:
+                        {}
+                      LShoulder:
+                        LBicep:
+                          LElbow:
+                            LForeArm:
+                              l_wrist:
+                                LFinger11_link:
+                                  LFinger12_link:
+                                    LFinger13_link:
+                                      {}
+                                LFinger21_link:
+                                  LFinger22_link:
+                                    LFinger23_link:
+                                      {}
+                                LFinger31_link:
+                                  LFinger32_link:
+                                    LFinger33_link:
+                                      {}
+                                LFinger41_link:
+                                  LFinger42_link:
+                                    LFinger43_link:
+                                      {}
+                                LHandTouchBack_frame:
+                                  {}
+                                LThumb1_link:
+                                  LThumb2_link:
+                                    {}
+                                l_grasp_frame:
+                                  {}
+                                l_gripper:
+                                  {}
+                      Neck:
+                        Head:
+                          CameraBottom_frame:
+                            CameraBottom_optical_frame:
+                              {}
+                          CameraDepth_frame:
+                            CameraDepth_optical_frame:
+                              {}
+                          CameraTop_frame:
+                            CameraTop_optical_frame:
+                              {}
+                          HeadTouchFront_frame:
+                            {}
+                          HeadTouchMiddle_frame:
+                            {}
+                          HeadTouchRear_frame:
+                            {}
+                          LSpeaker_frame:
+                            {}
+                          RSpeaker_frame:
+                            {}
+                      RShoulder:
+                        RBicep:
+                          RElbow:
+                            RForeArm:
+                              r_wrist:
+                                RFinger11_link:
+                                  RFinger12_link:
+                                    RFinger13_link:
+                                      {}
+                                RFinger21_link:
+                                  RFinger22_link:
+                                    RFinger23_link:
+                                      {}
+                                RFinger31_link:
+                                  RFinger32_link:
+                                    RFinger33_link:
+                                      {}
+                                RFinger41_link:
+                                  RFinger42_link:
+                                    RFinger43_link:
+                                      {}
+                                RHandTouchBack_frame:
+                                  {}
+                                RThumb1_link:
+                                  RThumb2_link:
+                                    {}
+                                r_grasp_frame:
+                                  {}
+                                r_gripper:
+                                  {}
+                      Tablet_frame:
+                        {}
+              ShovelLaser_frame:
+                {}
+              SonarBack_frame:
+                {}
+              SonarFront_frame:
+                {}
+              SurroundingFrontLaser_device_frame:
+                {}
+              SurroundingFrontLaser_frame:
+                {}
+              SurroundingLeftLaser_device_frame:
+                {}
+              SurroundingLeftLaser_frame:
+                {}
+              SurroundingRightLaser_device_frame:
+                {}
+              SurroundingRightLaser_frame:
+                {}
+              VerticalLeftLaser_frame:
+                {}
+              VerticalRightLaser_frame:
+                {}
+              WheelB_link:
+                {}
+              WheelFL_link:
+                {}
+              WheelFR_link:
+                {}
+      Update Interval: 0
+      Value: true
+    - Class: moveit_task_constructor/Motion Planning Tasks
+      Enabled: true
+      Interrupt Display: false
+      Loop Animation: false
+      Markers: true
+      Name: Motion Planning Tasks
+      Robot:
+        Fixed Robot Color: 150; 50; 150
+        Links:
+          All Links Enabled: true
+          BumperB_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          BumperFL_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          BumperFR_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          CameraBottom_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          CameraBottom_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          CameraDepth_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          CameraDepth_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          CameraTop_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          CameraTop_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ChestButton_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Head:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          HeadTouchFront_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          HeadTouchMiddle_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          HeadTouchRear_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          Hip:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ImuBaseAccelerometer_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -835,7 +1573,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          base_link:
+          l_grasp_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -848,6 +1586,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          r_grasp_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           r_gripper:
             Alpha: 1
             Show Axes: false
@@ -862,27 +1604,34 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          torso_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
         Robot Alpha: 0.5
         Show Robot Collision: false
         Show Robot Visual: true
-      Value: true
-    - Class: rviz/TF
-      Enabled: false
-      Frame Timeout: 15
-      Frames:
-        All Enabled: true
-      Marker Scale: 0.5
-      Name: TF
-      Show Arrows: true
-      Show Axes: true
-      Show Names: true
-      Tree:
+        Use Fixed Robot Color: false
+        Value: ""
+      Robot Description: robot_description
+      Scene:
+        Attached Body Color: 150; 50; 150
+        Scene Alpha: 0.899999976
+        Scene Color: 50; 230; 50
+        Value: true
+        Voxel Coloring: Z-Axis
+        Voxel Rendering: Occupied Voxels
+      Show Trail: false
+      State Display Time: 0.05 s
+      Task Solution Topic: /grasping/solution
+      Tasks:
         {}
-      Update Interval: 0
-      Value: false
+      Trail Step Size: 1
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
+    Default Light: true
     Fixed Frame: odom
     Frame Rate: 30
   Name: root
@@ -895,36 +1644,45 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 3.1229
+      Distance: 1.6391499
       Enable Stereo Rendering:
-        Stereo Eye Separation: 0.06
+        Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.624256
-        Y: -0.109979
-        Z: 1.34111e-07
+        X: 0.382652164
+        Y: -0.164481133
+        Z: 2.75672051e-07
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.0500000007
+      Invert Z Axis: false
       Name: Current View
-      Near Clip Distance: 0.01
-      Pitch: 0.454797
+      Near Clip Distance: 0.00999999978
+      Pitch: 0.334797055
       Target Frame: torso
       Value: XYOrbit (rviz)
-      Yaw: 5.95997
+      Yaw: 5.56997442
     Saved: ~
 Window Geometry:
-  Displays:
+  "&Displays":
     collapsed: false
-  Height: 763
+  "&Motion Planning Tasks":
+    collapsed: false
+  Height: 1150
   Help:
     collapsed: false
   Hide Left Dock: false
   Hide Right Dock: false
-  Motion Planning:
+  Motion Planning Tasks - Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002b1000002b5fc0200000007fb000000100044006900730070006c0061007900730100000028000000f9000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000127000001b6000001ab00fffffffc00000324000000c20000000000fffffffa000000000100000002fb000000160049006d006100670065005f006400650070007400680000000000ffffffff0000000000000000fb000000160049006d006100670065005f0063006f006c006f00720100000000000002a20000000000000000fb0000000a0049006d00610067006501000002e80000011a0000000000000000000002d2000002b500000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  MotionPlanning:
+    collapsed: false
+  MotionPlanning - Slider:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b10000040ffc020000000cfb000000100044006900730070006c0061007900730100000049000001f2000000bd00fffffffb0000000800480065006c00700000000342000000bb0000005d00fffffffb0000000a0056006900650077007300000003b0000000b0000000a500fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000127000001b60000000000000000fc00000324000000c20000000000fffffffa000000000100000002fb000000160049006d006100670065005f006400650070007400680000000000ffffffff0000000000000000fb000000160049006d006100670065005f0063006f006c006f00720100000000000002a20000000000000000fb0000000a0049006d00610067006501000002e80000011a0000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000004400fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670000000120000001db000001cf00fffffffb000000120020002d00200053006c00690064006500720000000000ffffffff0000000000000000fb0000003c004d006f00740069006f006e00200050006c0061006e006e0069006e00670020005400610073006b00730020002d00200053006c00690064006500720000000000ffffffff0000004400fffffffb0000002a004d006f00740069006f006e00200050006c0061006e006e0069006e00670020005400610073006b0073010000024100000217000000e000ffffff000004c90000040f00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1417
-  X: 2224
-  Y: 114
+  Width: 1920
+  X: 1920
+  Y: 0
